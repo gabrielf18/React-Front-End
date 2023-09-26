@@ -1,9 +1,9 @@
 import './Header.css'
 
-export const Header = () => {
+const Header = () => {
   return (
-    <header id ="header">
-        <h1> Logo</h1>
+    <header id="header">
+        <h1>Logo</h1>
         <nav>
             <ul>
                 <li>Home</li>

@@ -1,9 +1,12 @@
-
+import Header from "@/components/layout/Header"
 
 const QuemSomos = () => {
-    return (
-      <h1>QUEM SOMOS?</h1>
-    )
-  }
-  
-  export default QuemSomos
+  return (
+    <>
+      <Header />
+      <h1>Bem vindo ao Quem Somos!</h1>
+    </>
+  )
+}
+
+export default QuemSomos
