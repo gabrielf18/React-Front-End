@@ -1,16 +1,17 @@
 import Header from "@/components/layout/Header"
-import Button from "@/components/utils/Button"
+import CustomButton from "@/components/utils/CustomButton"
 
-const user = {name: "Jamelão", email : "aquele@email.com", photo:"awdhuaiwd"}
+const user = {name: "Renan", email: "email@gmail.com", photo: "urldafoto"}
 
-const QuemSomos = () => {
-    return (
-      <> 
-        <h1>QUEM SOMOS?</h1>
-        <Button titulo = 'Login'/>
-        <Button user={user}/>
-      </>
-    )
-  }
-  
-  export default QuemSomos
+const Contato = () => {
+  return (
+    <>
+        <Header />
+        <h1>Contato</h1>
+        <CustomButton titulo="Login"/> 
+        <CustomButton user={user}/>
+    </>
+  )
+}
+
+export default Contato

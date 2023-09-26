@@ -1,16 +1,15 @@
 import './globals.css'
-import Header from '@/components/layout/Header'
+import Header from "@/components/layout/Header"
 
 export const metadata = {
   title: 'App React',
-  description: 'React Project with Next',
+  description: 'React Project with Next.js',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header/>
         {children}
       </body>
     </html>
