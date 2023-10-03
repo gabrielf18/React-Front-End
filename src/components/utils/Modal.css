@@ -1,10 +1,10 @@
-.modal {
+.modal{
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    top: 0;
-    background-color: #00000050;
+    background: #000000d2;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,8 +13,10 @@
 .modal main{
     width: 500px;
     min-height: 300px;
-    background: #fff;
+    background: #FFF;
     border-radius: 20px;
     padding: 20px;
-    
+}
+.modal main h1{
+    margin: 0 0 15px 0;
 }

@@ -1,11 +1,9 @@
-const Button = ({user}) => {
-    return (
-      <>
-          <button>{user?.name}</button>
-          <p>Test: {user?.email}</p>
-          <p>Test: {user?.photo}</p>
-      </>
-    )
-  }
-  
-  export default Button
+import './Button.css'
+
+const Button = ({variant, title}) => {
+  return (
+    <button className={variant}>{title}</button>
+  )
+}
+
+export default Button

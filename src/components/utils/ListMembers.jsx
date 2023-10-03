@@ -17,7 +17,7 @@ const ListMembers = () => {
         getMembers()
     } , [])
 
-    const handleSubmit = (event) => {
+    const handleSubmit = async (event) => {
         event.preventDefault()
         const newUser = {
             name: event.target.name.value,
@@ -25,6 +25,23 @@ const ListMembers = () => {
             pass: event.target.pass.value,
             photo: event.target.photo.value,
         }
+        const response = await fetch('http://localhost:3300/user',
+        {
+            cache: 'no-store',
+            method: 'POST',
+            headers: {
+            "Content-Type": "application/json",
+            },
+            body: JSON.stringify(newUser)
+        }
+        )
+        if(response.ok){
+            const result = await response.json()
+            if(result?.success){
+                setUsers([...users, result.user])
+            }
+        }
+
     }
 
     return (
